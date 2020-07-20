@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+    <name>ASM No Admin</name>
+    <author>Ciro Artigot</author>
+    <creationDate>July 2020</creationDate>
+    <copyright>Copyright (C) 2020 Ciro Artigot. All rights reserved.</copyright>
+    <license>GNU General Public License</license>
+    <authorEmail>info@algosemueve.es</authorEmail>
+    <authorUrl>https://algosemueve.es</authorUrl>
+    <version>1.0.0</version>
+    <description>Simple plugin to hide the administrator login.</description>
+
+    <files>
+        <filename plugin="asmnoadmin">asmnoadmin.php</filename>
+    </files>
+
+    <config>
+        <fields name="params">
+            <fieldset name="basic">
+             
+                <field name="key" type="text" default="asmlogin"
+                       label="Key"
+                       description="The Key"
+    
+                />
+				
+				<field name="answer" type="text" default="yes"
+                       label="Value"
+                       description="The Key value"	
+    
+                />
+				
+				<field name="redirect" type="text" default="/"
+                       label="Redirect path / url"
+                       description="Insert the redirect path/url when the access to the administrator without right key/value"
+    
+                />
+  
+            </fieldset>
+            
+        </fields>
+    </config>
+    <updateservers>
+        <server type="extension" priority="1" name="ASM Update Site">https://algosemueve/updates/asmnoadmin.xml</server>
+    </updateservers>
+</extension>
