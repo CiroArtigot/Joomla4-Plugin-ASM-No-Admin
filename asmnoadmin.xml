@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension version="2.5.0" type="plugin" group="system" method="upgrade">
+<extension type="plugin" group="system" method="upgrade">
     <name>ASM No Admin</name>
     <author>Ciro Artigot</author>
-    <creationDate>July 2020</creationDate>
-    <copyright>Copyright (C) 2020 Ciro Artigot. All rights reserved.</copyright>
+    <creationDate>July 2021</creationDate>
+    <copyright>Copyright (C) 2021 Ciro Artigot. All rights reserved.</copyright>
     <license>GNU General Public License</license>
     <authorEmail>info@algosemueve.es</authorEmail>
     <authorUrl>https://algosemueve.es</authorUrl>
