@@ -17,10 +17,10 @@ class plgSystemAsmNoAdmin extends CMSPlugin {
 	public function onAfterInitialise() {
 		// this is for Ajax petitions
 		if( isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] === 'XMLHttpRequest') return;		
-		$app	= JFactory::getApplication();	
+		$app	= Factory::getApplication();	
 
 		// if client is administrator && not guest OR site return
-		if(($app->isClient('administrator') && !JFactory::getUser()->guest) || $app->isClient('site')) {
+		if(($app->isClient('administrator') && !Factory::getUser()->guest) || $app->isClient('site')) {
 			return;	
 		}
 		else {		
@@ -36,4 +36,3 @@ class plgSystemAsmNoAdmin extends CMSPlugin {
 	}
 	
 }
-?>
